@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    position: relative;
+    color: white;
+    max-width: 95%;
+    height: 100vh;
+    padding: 1.3rem;
+    margin: auto;
+    background: linear-gradient(
+        200.96deg,
+        #fedc2a -29.09%,
+        #dd5789 51.77%,
+        #7a2c9e 129.35%
+    );
+    font-family: sans-serif;
+    overflow-y: hidden;
+    justify-content: center;
+    align-items: center;
+    font-family: "Merriweather", serif;
+}
