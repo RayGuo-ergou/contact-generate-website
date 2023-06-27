@@ -39,7 +39,7 @@ function CSVCreator() {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const handleChange = (
-    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    event: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>,
   ) => {
     if (event.target.type === 'number') {
       dispatch({
@@ -68,7 +68,7 @@ function CSVCreator() {
             [state.type === 'email' ? 'email' : 'phone']:
               state.type === 'email'
                 ? `${state.baseEmail}${i + 1}@example.com`
-                : `+614${Math.floor(10000000 + Math.random() * 90000000)}`,
+                : `+6141${Math.floor(1000000 + Math.random() * 9000000)}`,
             firstname: `${state.firstName}${i + 1}`,
             lastname: state.lastName,
           };
@@ -81,7 +81,7 @@ function CSVCreator() {
           firstname: `${state.firstName}${i + 1}`,
           lastname: state.lastName,
         };
-      }
+      },
     );
 
     const csv = Papa.unparse(data);
