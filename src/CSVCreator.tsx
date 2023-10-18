@@ -71,7 +71,7 @@ function CSVCreator() {
                     const row = {
                         [state.type === 'email' ? 'email' : 'phone']:
                             state.type === 'email'
-                                ? `${state.baseEmail}${i + 1}@example.com`
+                                ? `${state.baseEmail}${i + 1}@amplify-test.com`
                                 : `+6141${Math.floor(
                                       1000000 + Math.random() * 9000000,
                                   )}`,
